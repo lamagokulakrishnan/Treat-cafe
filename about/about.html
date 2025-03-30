@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Treat Cafe</title>
+    <link rel="stylesheet" href="/about/about.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add this right after the opening body tag -->
+    <div class="photo-popup">
+        <div class="popup-content">
+            <img src="" alt="Full size photo">
+            <div class="close-popup">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (Same as index.html) -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Treat Cafe Logo">
+            </div>
+            <div class="company-name">
+                <h1>Treat Cafe</h1>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about/about.html" class="active">About</a></li>
+                <li><a href="/menu/menu.html">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-wrapper">
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <!-- Add decorative coffee beans -->
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            
+            <div class="about-hero-content">
+                <h1>Our Story</h1>
+                <p>Crafting Perfect Moments Since 2020</p>
+            </div>
+        </section>
+
+        <!-- Our Journey Section -->
+        <section class="journey-section">
+            <h2>Our Journey</h2>
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year-box">
+                            <span class="year">2020</span>
+                            <i class="fas fa-seedling journey-icon"></i>
+                        </div>
+                        <div class="content">
+                            <h3>The Beginning</h3>
+                            <p>Started as a small coffee corner with a big dream</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year-box">
+                            <span class="year">2021</span>
+                            <i class="fas fa-mug-hot journey-icon"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Growing Together</h3>
+                            <p>Expanded our menu and welcomed more coffee lovers</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year-box">
+                            <span class="year">2022</span>
+                            <i class="fas fa-users journey-icon"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Community Hub</h3>
+                            <p>Became Erode's favorite meeting spot</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year-box">
+                            <span class="year">2023</span>
+                            <i class="fas fa-award journey-icon"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Award Winning</h3>
+                            <p>Recognized for our exceptional service and quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Passion</h3>
+                    <p>We pour our heart into every cup we serve</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Quality</h3>
+                    <p>Only the finest ingredients make it to your table</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Creating a warm, welcoming space for everyone</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>Committed to eco-friendly practices</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="/static/images/about/owner.jpg" alt="LamaGokulakrishnan" data-full-img="/static/images/about/owner.jpg">
+                    </div>
+                    <h3>LamaGokulakrishnan</h3>
+                    <p class="position">Owner & Head Chef</p>
+                    <p class="bio">
+                        A passionate culinary artist with over 5 years of experience in crafting delightful treats. 
+                        Dedicated to creating memorable experiences through innovative recipes and exceptional service. 
+                        Committed to bringing joy to every customer through the perfect blend of flavors and hospitality.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The best coffee in town! The atmosphere is perfect for both work and relaxation."</p>
+                    </div>
+                    <div class="author">
+                        <img src="/static/images/about/customer1.jpg" alt="Customer">
+                        <div class="author-info">
+                            <h4>Kavi Prasath</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+        </section>
+
+        <!-- Footer/Contact Section -->
+        <footer id="contact" class="modern-footer">
+            <div class="footer-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 C240,120 480,120 720,60 C960,0 1200,0 1440,60 L1440,120 L0,120 Z" fill="#1a0f00"/>
+                </svg>
+            </div>
+
+            <div class="footer-content">
+                <h2 class="section-title">Get in Touch</h2>
+                
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-info">
+                        <div class="company-details">
+                            <h3><i class="fas fa-store"></i> Treat Cafe</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 639,Subash Nagar,Erode-638001</p>
+                            <p><i class="fas fa-phone"></i> +91 8778289293</p>
+                            <p><i class="fas fa-envelope"></i> info@treatcafe.com</p>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3><i class="far fa-clock"></i> Working Hours</h3>
+                            <div class="hours-grid">
+                                <div class="day">Monday - Friday</div>
+                                <div class="time">8:00 AM - 10:00 PM</div>
+                                <div class="day">Saturday</div>
+                                <div class="time">9:00 AM - 11:00 PM</div>
+                                <div class="day">Sunday</div>
+                                <div class="time">9:00 AM - 8:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="modern-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Your Name</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Your Email</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Payment & Social -->
+                    <div class="footer-extra">
+                        <div class="payment-methods">
+                            <h3><i class="fas fa-credit-card"></i> We Accept</h3>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-google-pay"></i>
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3><i class="fas fa-hashtag"></i> Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Add this inside the footer-extra div, after social-links -->
+                        <div class="daily-quote">
+                            <h3><i class="fas fa-quote-left"></i> Daily Inspiration</h3>
+                            <div class="quote-container">
+                                <div class="quote-box">
+                                    <p class="quote-text"></p>
+                                    <p class="quote-author"></p>
+                                </div>
+                                <div class="quote-overlay">
+                                    <i class="fas fa-coffee"></i>
+                                    <span>Hover for today's quote</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Treat Cafe. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/about/about.js"></script>
+</body>
+</html>

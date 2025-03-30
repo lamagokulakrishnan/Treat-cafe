@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treat Cafe</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Treat Cafe Logo">
+            </div>
+            <div class="company-name">
+                <h1>Treat Cafe</h1>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about/about.html">About</a></li>
+                <li><a href="/menu/menu.html">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Add a wrapper for the main content -->
+    <div class="content-wrapper">
+        <!-- Slideshow Section -->
+        <section id="home">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="/static/images/coffee.jpg" alt="Coffee Image 1">
+                    <div class="text">
+                        <h2>Welcome to Treat Cafe</h2>
+                        <p>Experience the finest coffee and delicious treats in town</p>
+                    </div>
+                </div>
+                <div class="slide fade">
+                    <img src="/static/images/black_coffee.jpg" alt="Coffee Image 2">
+                    <div class="text">Relaxing Atmosphere</div>
+                </div>
+                <div class="slide fade">
+                    <img src="/static/images/donet.jpg" alt="Coffee Image 3">
+                    <div class="text">Delicious Snacks</div>
+                </div>
+                <div class="slide fade">
+                    <img src="/static/images/ice_cake.png" alt="Coffee Image 3">
+                    <div class="text">Delicious Snacks</div>
+                </div>
+                <div class="slide fade">
+                    <img src="/static/images/cake2.png" alt="Coffee Image 3">
+                    <div class="text">Delicious Snacks</div>
+                </div>
+            </div>
+            <br>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+
+        <!-- Home Page Content -->
+        <section id="about" class="content">
+            <h2>Our Specialties</h2>
+            <div class="specialties">
+                <div class="specialty-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Premium Coffee</h3>
+                    <p>Savor our carefully selected coffee beans, roasted to perfection for the ultimate coffee experience.</p>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-bread-slice"></i>
+                    <h3>Fresh Pastries</h3>
+                    <p>Indulge in our freshly baked pastries and cakes, made with love every morning.</p>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Warm Atmosphere</h3>
+                    <p>Enjoy your treats in our cozy, welcoming environment perfect for any occasion.</p>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-ice-cream"></i>
+                    <h3>Desserts & Ice Cream</h3>
+                    <p>Treat yourself to our delightful selection of desserts and homemade ice cream flavors.</p>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-mug-hot"></i>
+                    <h3>Special Beverages</h3>
+                    <p>Try our signature hot chocolates, teas, and seasonal drink specials.</p>
+                </div>
+                <div class="specialty-item">
+                    <i class="fas fa-cookie"></i>
+                    <h3>Fresh Cookies</h3>
+                    <p>Enjoy our freshly baked cookies made from scratch with premium ingredients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add this after the specialties section -->
+        <section class="featured-section">
+            <div class="featured-grid">
+                <div class="featured-text">
+                    <h2>Experience the Perfect Brew</h2>
+                    <p>Every cup tells a story of carefully selected beans, expert roasting, and passionate craftsmanship.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Premium Coffee Beans</li>
+                        <li><i class="fas fa-check-circle"></i> Expert Baristas</li>
+                        <li><i class="fas fa-check-circle"></i> Cozy Atmosphere</li>
+                    </ul>
+                    <a href="/menu/menu.html" class="menu-btn">View Our Menu</a>
+                </div>
+                <div class="featured-image">
+                    <img src="/static/images/coffee.jpg" alt="Premium Coffee">
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>5000+</h3>
+                    <p>Coffee Served</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <h3>1000+</h3>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <h3>4.9</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <h3>15+</h3>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Our Coffee Journey</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/static/images/coffee.jpg" alt="Coffee Making">
+                    <div class="gallery-overlay">
+                        <h3>Artisan Coffee</h3>
+                        <p>Expertly crafted beverages</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/images/black_coffee.jpg" alt="Coffee Shop">
+                    <div class="gallery-overlay">
+                        <h3>Cozy Space</h3>
+                        <p>Perfect for work or relaxation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/static/images/donet.jpg" alt="Pastries">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Pastries</h3>
+                        <p>Baked daily with love</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer/Contact Section -->
+        <footer id="contact" class="modern-footer">
+            <div class="footer-wave">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,0 C240,120 480,120 720,60 C960,0 1200,0 1440,60 L1440,120 L0,120 Z" fill="#1a0f00"/>
+                </svg>
+            </div>
+
+            <div class="footer-content">
+                <h2 class="section-title">Get in Touch</h2>
+                
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-info">
+                        <div class="company-details">
+                            <h3><i class="fas fa-store"></i> Treat Cafe</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 639,Subash Nagar,Erode-638001</p>
+                            <p><i class="fas fa-phone"></i> +91 8778289293</p>
+                            <p><i class="fas fa-envelope"></i> info@treatcafe.com</p>
+                        </div>
+
+                        <div class="business-hours">
+                            <h3><i class="far fa-clock"></i> Working Hours</h3>
+                            <div class="hours-grid">
+                                <div class="day">Monday - Friday</div>
+                                <div class="time">8:00 AM - 10:00 PM</div>
+                                <div class="day">Saturday</div>
+                                <div class="time">9:00 AM - 11:00 PM</div>
+                                <div class="day">Sunday</div>
+                                <div class="time">9:00 AM - 8:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="modern-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Your Name</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Your Email</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="form-border"></span>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Payment & Social -->
+                    <div class="footer-extra">
+                        <div class="payment-methods">
+                            <h3><i class="fas fa-credit-card"></i> We Accept</h3>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-google-pay"></i>
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3><i class="fas fa-hashtag"></i> Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Add this inside the footer-extra div, after social-links -->
+                        <div class="daily-quote">
+                            <h3><i class="fas fa-quote-left"></i> Daily Inspiration</h3>
+                            <div class="quote-container">
+                                <div class="quote-box">
+                                    <p class="quote-text"></p>
+                                    <p class="quote-author"></p>
+                                </div>
+                                <div class="quote-overlay">
+                                    <i class="fas fa-coffee"></i>
+                                    <span>Hover for today's quote</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Treat Cafe. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

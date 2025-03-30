@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Treat Cafe</title>
+    <link rel="stylesheet" href="/menu/menu.css">
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Treat Cafe Logo">
+            </div>
+            <div class="company-name">
+                <h1>Treat Cafe</h1>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about/about.html">About</a></li>
+                <li><a href="/menu/menu.html" class="active">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Add this after the header -->
+    <div class="menu-wrapper">
+        <!-- About Hero Section -->
+        <section class="menu-hero">
+            <!-- Add decorative coffee beans -->
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            <i class="fas fa-coffee coffee-bean"></i>
+            
+            <div class="menu-hero-content">
+                <h1>Our Menu</h1>
+                <p>Discover Our Delightful Selection</p>
+            </div>
+        </section>
+
+        <section class="menu-container">
+            <!-- Tea Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-mug-hot"></i>
+                    <h2>Tea's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Dum Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹12</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Lemon Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Bellam Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Masala Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Elachi Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹18</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Ginger Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Ginger Lemon Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Green Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Badam Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Immuni Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Ginger Immuni Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-coffee"></i>
+                    <h2>Coffee's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Coffee</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Premium Coffee</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Filter Coffee</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Cold Coffee</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Chocolate Coffee</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹70</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milk Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-glass-whiskey"></i>
+                    <h2>Milk's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Turmeric Milk</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Horlicks</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Boost</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Pepper Milk</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹22</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lassi Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h2>Lassi's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Sweet Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹40</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Salt Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹40</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Sweet & Salt Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹40</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Mango Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Mango Banana Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Black Current Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Strawberry Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Royal Dates Lassi</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹60</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coolers Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-glass-martini-alt"></i>
+                    <h2>Cooler's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Lime Mint Cooler</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Ginger Lemon Ice Tea</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Fizi Mojito</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Mint Mojito</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Lime Masala Mojito</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Rose Lemonade</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Blue Lagoon</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹75</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milkshakes Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-blender"></i>
+                    <h2>Milkshake's</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Chilled Badam Milk</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Banana Milk Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Rose Milk</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹55</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Vanilla Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Strawberry Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Chocolate Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Black Current Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹70</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Oreo Milk Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Dry Fruit Milk Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Royal Dates Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹119</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Blueberry Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹119</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Strawberry Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹119</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Pista Shake</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹119</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smoothies Section -->
+            <div class="menu-section">
+                <div class="section-title">
+                    <i class="fas fa-cocktail"></i>
+                    <h2>Smoothies</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-name">Peanut Banana Smoothie</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹75</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Strawberry Smoothie</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹75</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Dark Almond Smoothie</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Vegan Apple Dates Smoothie</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹85</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-name">Tropical Smoothie</div>
+                        <div class="price-line"></div>
+                        <div class="item-price">₹90</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="modern-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 C240,120 480,120 720,60 C960,0 1200,0 1440,60 L1440,120 L0,120 Z" fill="#1a0f00"/>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <h2 class="section-title">Get in Touch</h2>
+            
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-info">
+                    <div class="company-details">
+                        <h3><i class="fas fa-store"></i> Treat Cafe</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 639,Subash Nagar,Erode-638001</p>
+                        <p><i class="fas fa-phone"></i> +91 8778289293</p>
+                        <p><i class="fas fa-envelope"></i> info@treatcafe.com</p>
+                    </div>
+
+                    <div class="business-hours">
+                        <h3><i class="far fa-clock"></i> Working Hours</h3>
+                        <div class="hours-grid">
+                            <div class="day">Monday - Friday</div>
+                            <div class="time">8:00 AM - 10:00 PM</div>
+                            <div class="day">Saturday</div>
+                            <div class="time">9:00 AM - 11:00 PM</div>
+                            <div class="day">Sunday</div>
+                            <div class="time">9:00 AM - 8:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="modern-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="form-border"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="form-border"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="form-border"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Payment & Social -->
+                <div class="footer-extra">
+                    <div class="payment-methods">
+                        <h3><i class="fas fa-credit-card"></i> We Accept</h3>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-google-pay"></i>
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3><i class="fas fa-hashtag"></i> Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Add this inside the footer-extra div, after social-links -->
+                    <div class="daily-quote">
+                        <h3><i class="fas fa-quote-left"></i> Daily Inspiration</h3>
+                        <div class="quote-container">
+                            <div class="quote-box">
+                                <p class="quote-text"></p>
+                                <p class="quote-author"></p>
+                            </div>
+                            <div class="quote-overlay">
+                                <i class="fas fa-coffee"></i>
+                                <span>Hover for today's quote</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Treat Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+    <script src="/menu/menu.js"></script>
+</body>
+</html>
